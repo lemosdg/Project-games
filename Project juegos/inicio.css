@@ -1,0 +1,118 @@
+body{
+    background-color: #333;
+}
+
+/* cabecera */
+header{
+    background-image: url(imagenes/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+/* menu */
+
+nav{
+    background-color: rgb(92, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.linav {
+    float: left;
+}
+  
+.linav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.linav a:hover {
+    background-color: #111;
+}
+
+.active{
+    background-color: red;
+}
+
+/* fomularios */
+
+.est{
+    text-transform: capitalize;
+}
+
+input[type=radio]{
+    margin-right: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5em;
+    color: blue;
+    margin-bottom: 40px;
+}
+
+p{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+div{
+    background-color: rgb(50, 123, 126);
+    width: 600px;
+    height: 500px;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.boton{
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* darkmode */
+
+.darkmode{
+    background-color: white;
+    
+}
+
+.input{
+    position: absolute;
+    left: -999px;
+    top: 0px;
+}
+
+label .magia{
+    border: 2px solid black;
+    background-color: white;
+    transition: all 1s;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input:checked~.magia{
+    background-color: rgb(19, 17, 17);
+    transform: rotate(360deg);
+
+}
